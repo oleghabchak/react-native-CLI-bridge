@@ -14,15 +14,18 @@ import java.util.List;
 public class AwesomeModule2Package implements ReactPackage {
   @NonNull
   @Override
-  public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
-    List<NativeModule> modules = new ArrayList<>();
-    modules.add(new AwesomeModule2Module(reactContext));
-    return modules;
+  public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
+    return Collections.emptyList();
   }
 
   @NonNull
   @Override
-  public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
-    return Collections.emptyList();
+  public List<NativeModule> createNativeModules(
+    @NonNull ReactApplicationContext reactContext) {
+    List<NativeModule> modules = new ArrayList<>();
+
+    modules.add(new AwesomeModule2Module(reactContext));
+
+    return modules;
   }
 }
