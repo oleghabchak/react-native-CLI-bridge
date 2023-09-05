@@ -20,3 +20,7 @@ const AwesomeModule2 = NativeModules.AwesomeModule2
 export function multiply(a: number, b: number): Promise<number> {
   return AwesomeModule2.multiply(a, b);
 }
+
+export function showDeviceManager() {
+  return NativeModules.SDMModule.showDeviceManager();
+}
