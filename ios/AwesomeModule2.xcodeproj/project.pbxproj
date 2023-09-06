@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		95C390D52AA0CC39004972BA /* SDM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C390D42AA0CC39004972BA /* SDM.framework */; platformFilter = ios; };
+		95485D4C2AA732FB008554B8 /* AwesomeModule2.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* AwesomeModule2.mm */; };
+		95485D622AA748F6008554B8 /* SDM.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95485D612AA748EE008554B8 /* SDM.xcframework */; };
+		95485D642AA74917008554B8 /* SDMModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95485D632AA74917008554B8 /* SDMModule.mm */; };
+		95D1F3642AA8C3A600A7E222 /* NewRelic.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F35F2AA8C3A400A7E222 /* NewRelic.xcframework */; };
+		95D1F3652AA8C3A600A7E222 /* QuantumSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3622AA8C3A500A7E222 /* QuantumSDK.xcframework */; };
+		95D1F3662AA8C3A600A7E222 /* sioDEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3632AA8C3A600A7E222 /* sioDEX.xcframework */; };
+		95D1F3742AA8CA1A00A7E222 /* SioDexModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1F3722AA8CA1A00A7E222 /* SioDexModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +30,14 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libAwesomeModule2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAwesomeModule2.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		95C390CB2AA0C976004972BA /* SDMModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDMModule.h; path = ../../ReactNativeSample/ios/Sources/SDMModule.h; sourceTree = "<group>"; };
-		95C390CC2AA0C976004972BA /* SDMModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDMModule.m; path = ../../ReactNativeSample/ios/Sources/SDMModule.m; sourceTree = "<group>"; };
-		95C390D42AA0CC39004972BA /* SDM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDM.framework; sourceTree = "<group>"; };
+		95485D5E2AA748D3008554B8 /* SDMModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMModule.h; sourceTree = "<group>"; };
+		95485D612AA748EE008554B8 /* SDM.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SDM.xcframework; sourceTree = "<group>"; };
+		95485D632AA74917008554B8 /* SDMModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SDMModule.mm; sourceTree = "<group>"; };
+		95D1F35F2AA8C3A400A7E222 /* NewRelic.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NewRelic.xcframework; sourceTree = "<group>"; };
+		95D1F3622AA8C3A500A7E222 /* QuantumSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = QuantumSDK.xcframework; sourceTree = "<group>"; };
+		95D1F3632AA8C3A600A7E222 /* sioDEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = sioDEX.xcframework; sourceTree = "<group>"; };
+		95D1F3722AA8CA1A00A7E222 /* SioDexModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SioDexModule.m; sourceTree = "<group>"; };
+		95D1F3732AA8CA1A00A7E222 /* SioDexModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SioDexModule.h; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* AwesomeModule2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeModule2.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* AwesomeModule2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeModule2.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,7 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C390D52AA0CC39004972BA /* SDM.framework in Frameworks */,
+				95D1F3642AA8C3A600A7E222 /* NewRelic.xcframework in Frameworks */,
+				95D1F3662AA8C3A600A7E222 /* sioDEX.xcframework in Frameworks */,
+				95D1F3652AA8C3A600A7E222 /* QuantumSDK.xcframework in Frameworks */,
+				95485D622AA748F6008554B8 /* SDM.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,19 +68,24 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				95C390C52AA0B332004972BA /* Frameworks */,
+				95D1F3732AA8CA1A00A7E222 /* SioDexModule.h */,
+				95D1F3722AA8CA1A00A7E222 /* SioDexModule.m */,
+				95485D602AA748E6008554B8 /* Frameworks */,
+				95485D5E2AA748D3008554B8 /* SDMModule.h */,
+				95485D632AA74917008554B8 /* SDMModule.mm */,
 				B3E7B5881CC2AC0600A0062D /* AwesomeModule2.h */,
 				B3E7B5891CC2AC0600A0062D /* AwesomeModule2.mm */,
-				95C390CB2AA0C976004972BA /* SDMModule.h */,
-				95C390CC2AA0C976004972BA /* SDMModule.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		95C390C52AA0B332004972BA /* Frameworks */ = {
+		95485D602AA748E6008554B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95C390D42AA0CC39004972BA /* SDM.framework */,
+				95485D612AA748EE008554B8 /* SDM.xcframework */,
+				95D1F35F2AA8C3A400A7E222 /* NewRelic.xcframework */,
+				95D1F3622AA8C3A500A7E222 /* QuantumSDK.xcframework */,
+				95D1F3632AA8C3A600A7E222 /* sioDEX.xcframework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95485D642AA74917008554B8 /* SDMModule.mm in Sources */,
+				95D1F3742AA8CA1A00A7E222 /* SioDexModule.m in Sources */,
+				95485D4C2AA732FB008554B8 /* AwesomeModule2.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,10 +254,7 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Frameworks\"",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -245,7 +264,6 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AwesomeModule2;
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -253,10 +271,7 @@
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Frameworks\"",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -266,7 +281,6 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AwesomeModule2;
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

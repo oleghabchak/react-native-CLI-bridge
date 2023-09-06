@@ -1,0 +1,52 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios12.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name sioDEX
+import Foundation
+import SDM
+import Swift
+import _Concurrency
+@_exported import sioDEX
+public enum DexError : Swift.Error, Foundation.LocalizedError, Swift.CustomStringConvertible {
+  case alreadyStarted
+  case downloadingCancelled
+  case connectionFailed
+  case connectAsSlaveFailed
+  case connectAsMasterFailed
+  case badResponseOnMaster
+  case badResponseOnExchange
+  case exchangeData
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: sioDEX.DexError, b: sioDEX.DexError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc public class VendingMachine : ObjectiveC.NSObject {
+  @objc public enum MachineType : Swift.Int, Swift.CustomStringConvertible {
+    case mars = 0
+    case coinco = 1
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public init(device: SDM.BlueSnapDB9Device, trace: ((Foundation.TimeInterval, Swift.String) -> Swift.Void)?)
+  @objc public func startDownloading(machineType: sioDEX.VendingMachine.MachineType, complete: @escaping (Foundation.Data?, Swift.Error?) -> Swift.Void)
+  @objc public func cancelDownloading()
+  @objc deinit
+}
+extension sioDEX.DexError : Swift.Equatable {}
+extension sioDEX.DexError : Swift.Hashable {}
+extension sioDEX.VendingMachine.MachineType : Swift.Equatable {}
+extension sioDEX.VendingMachine.MachineType : Swift.Hashable {}
+extension sioDEX.VendingMachine.MachineType : Swift.RawRepresentable {}

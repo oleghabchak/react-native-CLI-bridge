@@ -54,6 +54,10 @@
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Our app uses bluetooth to find, connect and transfer data between different devices</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-  <string>Our app uses bluetooth to find, connect and transfer data between different devices</string>
+	<string>Our app uses bluetooth to find, connect and transfer data between different devices</string>
+	<key>UISupportedExternalAccessoryProtocols</key>
+	<array>
+		<string></string>
+	</array>
 </dict>
 </plist>

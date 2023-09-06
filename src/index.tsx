@@ -19,3 +19,9 @@ const LINKING_ERROR =
 export function showDeviceManager() {
   return SDMModule.showDeviceManager();
 }
+
+export function sendCommand(addres, command) {
+  return NativeModules.SDMModule.sendCommand(addres, command);
+}
+
+export const sdmmodule = NativeModules.SDMModule;
