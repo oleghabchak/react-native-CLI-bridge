@@ -1,5 +1,4 @@
 import { NativeModules, Platform } from 'react-native';
-module.exports = NativeModules.SDMModule;
 
 const LINKING_ERROR =
   `The package 'react-native-awesome-module2' doesn't seem to be linked. Make sure: \n\n` +
@@ -7,8 +6,8 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-  const SDMModule = NativeModules.SDMModule
-  ? NativeModules.SDMModule
+  const SDMModule = NativeModules.AwesomeModule2
+  ? NativeModules.AwesomeModule2
   : new Proxy(
       {},
       {

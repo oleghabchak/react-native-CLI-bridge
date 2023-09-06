@@ -3,11 +3,11 @@ package com.awesomemodule2example;
 import android.content.Context;
 import android.os.Bundle;
 
+import com.awesomemodule2.Constants;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
-import com.restock.serialdevicemanager.utilssio.UtilsSDM;
 
 import java.util.logging.Logger;
 
@@ -35,7 +35,7 @@ public class MainActivity extends ReactActivity implements CheckPermissions.iChe
   void initapp() {
     if (bInit) return;
     bInit = true;
-    UtilsSDM.createFolder(Constants.FOLDER_PATH);
+    Constants.createFolder(Constants.FOLDER_PATH);
   }
 
   /**

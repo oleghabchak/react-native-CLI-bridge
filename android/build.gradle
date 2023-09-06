@@ -49,9 +49,6 @@ android {
       jniLibs.srcDirs = ['libs']
     }
   }
-  buildFeatures {
-    buildConfig = true
-  }
   if (supportsNamespace()) {
     namespace "com.awesomemodule2"
 
@@ -93,14 +90,12 @@ repositories {
 
 
 dependencies {
-//  api project(':libs')
-//   implementation files('/Users/vladyslav/Documents/react-native-awesome-module2/example/android/app/libs/serialdevicemanager-mgabuild-release3.aar')
-
+  //noinspection GradlePath
+  implementation files('libs/serialdevicemanager-mgabuild-release3.aar')
   // For < 0.71, this will be from the local maven repo
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
-  implementation 'com.google.android.material:material:1.9.0'
 }
 
 if (isNewArchitectureEnabled()) {
