@@ -91,7 +91,7 @@ repositories {
 
 dependencies {
   //noinspection GradlePath
-  implementation files('libs/serialdevicemanager-mgabuild-release3.aar')
+  implementation(name: 'serialdevicemanager-mgabuild-release3', ext: 'aar')
   // For < 0.71, this will be from the local maven repo
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
