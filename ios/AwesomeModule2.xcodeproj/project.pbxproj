@@ -10,6 +10,9 @@
 		95485D4C2AA732FB008554B8 /* AwesomeModule2.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* AwesomeModule2.mm */; };
 		95485D622AA748F6008554B8 /* SDM.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95485D612AA748EE008554B8 /* SDM.xcframework */; };
 		95485D642AA74917008554B8 /* SDMModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95485D632AA74917008554B8 /* SDMModule.mm */; };
+		95D1F3642AA8C3A600A7E222 /* NewRelic.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F35F2AA8C3A400A7E222 /* NewRelic.xcframework */; };
+		95D1F3652AA8C3A600A7E222 /* QuantumSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3622AA8C3A500A7E222 /* QuantumSDK.xcframework */; };
+		95D1F3662AA8C3A600A7E222 /* sioDEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3632AA8C3A600A7E222 /* sioDEX.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,9 @@
 		95485D5E2AA748D3008554B8 /* SDMModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMModule.h; sourceTree = "<group>"; };
 		95485D612AA748EE008554B8 /* SDM.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SDM.xcframework; sourceTree = "<group>"; };
 		95485D632AA74917008554B8 /* SDMModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SDMModule.mm; sourceTree = "<group>"; };
+		95D1F35F2AA8C3A400A7E222 /* NewRelic.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NewRelic.xcframework; sourceTree = "<group>"; };
+		95D1F3622AA8C3A500A7E222 /* QuantumSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = QuantumSDK.xcframework; sourceTree = "<group>"; };
+		95D1F3632AA8C3A600A7E222 /* sioDEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = sioDEX.xcframework; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* AwesomeModule2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeModule2.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* AwesomeModule2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeModule2.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D1F3642AA8C3A600A7E222 /* NewRelic.xcframework in Frameworks */,
+				95D1F3662AA8C3A600A7E222 /* sioDEX.xcframework in Frameworks */,
+				95D1F3652AA8C3A600A7E222 /* QuantumSDK.xcframework in Frameworks */,
 				95485D622AA748F6008554B8 /* SDM.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				95485D612AA748EE008554B8 /* SDM.xcframework */,
+				95D1F35F2AA8C3A400A7E222 /* NewRelic.xcframework */,
+				95D1F3622AA8C3A500A7E222 /* QuantumSDK.xcframework */,
+				95D1F3632AA8C3A600A7E222 /* sioDEX.xcframework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";

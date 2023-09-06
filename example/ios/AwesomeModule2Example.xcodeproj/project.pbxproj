@@ -17,6 +17,12 @@
 		95BC2AC42AA7542500C51C1B /* SDM.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BC2AC32AA7542500C51C1B /* SDM.xcframework */; };
 		95BC2AC52AA7543300C51C1B /* SDM.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BC2AC32AA7542500C51C1B /* SDM.xcframework */; };
 		95BC2AC62AA7543300C51C1B /* SDM.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95BC2AC32AA7542500C51C1B /* SDM.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95D1F3692AA8C59200A7E222 /* NewRelic.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3682AA8C59200A7E222 /* NewRelic.xcframework */; };
+		95D1F36B2AA8C59200A7E222 /* QuantumSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3672AA8C58F00A7E222 /* QuantumSDK.xcframework */; };
+		95D1F36C2AA8C59200A7E222 /* sioDEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F36A2AA8C59200A7E222 /* sioDEX.xcframework */; };
+		95D1F36D2AA8C72700A7E222 /* QuantumSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3672AA8C58F00A7E222 /* QuantumSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95D1F36E2AA8C72700A7E222 /* NewRelic.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3682AA8C59200A7E222 /* NewRelic.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95D1F36F2AA8C72700A7E222 /* sioDEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F36A2AA8C59200A7E222 /* sioDEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				95D1F36D2AA8C72700A7E222 /* QuantumSDK.xcframework in Embed Frameworks */,
+				95D1F36E2AA8C72700A7E222 /* NewRelic.xcframework in Embed Frameworks */,
+				95D1F36F2AA8C72700A7E222 /* sioDEX.xcframework in Embed Frameworks */,
 				95BC2AC62AA7543300C51C1B /* SDM.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -61,6 +70,9 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AwesomeModule2Example/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		95BC2AC32AA7542500C51C1B /* SDM.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SDM.xcframework; sourceTree = "<group>"; };
+		95D1F3672AA8C58F00A7E222 /* QuantumSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = QuantumSDK.xcframework; sourceTree = "<group>"; };
+		95D1F3682AA8C59200A7E222 /* NewRelic.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NewRelic.xcframework; sourceTree = "<group>"; };
+		95D1F36A2AA8C59200A7E222 /* sioDEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = sioDEX.xcframework; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -79,7 +91,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				95BC2AC52AA7543300C51C1B /* SDM.xcframework in Frameworks */,
+				95D1F36C2AA8C59200A7E222 /* sioDEX.xcframework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-AwesomeModule2Example.a in Frameworks */,
+				95D1F36B2AA8C59200A7E222 /* QuantumSDK.xcframework in Frameworks */,
+				95D1F3692AA8C59200A7E222 /* NewRelic.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +134,9 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95D1F3672AA8C58F00A7E222 /* QuantumSDK.xcframework */,
+				95D1F3682AA8C59200A7E222 /* NewRelic.xcframework */,
+				95D1F36A2AA8C59200A7E222 /* sioDEX.xcframework */,
 				95BC2AC32AA7542500C51C1B /* SDM.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-AwesomeModule2Example.a */,

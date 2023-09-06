@@ -1,0 +1,11 @@
+framework module sioDEX {
+  umbrella header "siodex.h"
+
+  export *
+  module * { export * }
+}
+
+module sioDEX.Swift {
+    header "sioDEX-Swift.h"
+    requires objc
+}
