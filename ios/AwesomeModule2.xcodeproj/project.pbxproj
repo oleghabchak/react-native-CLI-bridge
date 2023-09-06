@@ -13,6 +13,7 @@
 		95D1F3642AA8C3A600A7E222 /* NewRelic.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F35F2AA8C3A400A7E222 /* NewRelic.xcframework */; };
 		95D1F3652AA8C3A600A7E222 /* QuantumSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3622AA8C3A500A7E222 /* QuantumSDK.xcframework */; };
 		95D1F3662AA8C3A600A7E222 /* sioDEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3632AA8C3A600A7E222 /* sioDEX.xcframework */; };
+		95D1F3742AA8CA1A00A7E222 /* SioDexModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1F3722AA8CA1A00A7E222 /* SioDexModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		95D1F35F2AA8C3A400A7E222 /* NewRelic.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NewRelic.xcframework; sourceTree = "<group>"; };
 		95D1F3622AA8C3A500A7E222 /* QuantumSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = QuantumSDK.xcframework; sourceTree = "<group>"; };
 		95D1F3632AA8C3A600A7E222 /* sioDEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = sioDEX.xcframework; sourceTree = "<group>"; };
+		95D1F3722AA8CA1A00A7E222 /* SioDexModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SioDexModule.m; sourceTree = "<group>"; };
+		95D1F3732AA8CA1A00A7E222 /* SioDexModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SioDexModule.h; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* AwesomeModule2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeModule2.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* AwesomeModule2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeModule2.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +68,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				95D1F3732AA8CA1A00A7E222 /* SioDexModule.h */,
+				95D1F3722AA8CA1A00A7E222 /* SioDexModule.m */,
 				95485D602AA748E6008554B8 /* Frameworks */,
 				95485D5E2AA748D3008554B8 /* SDMModule.h */,
 				95485D632AA74917008554B8 /* SDMModule.mm */,
@@ -143,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95485D642AA74917008554B8 /* SDMModule.mm in Sources */,
+				95D1F3742AA8CA1A00A7E222 /* SioDexModule.m in Sources */,
 				95485D4C2AA732FB008554B8 /* AwesomeModule2.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
