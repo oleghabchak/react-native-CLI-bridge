@@ -2,13 +2,19 @@ import * as React from 'react';
 import { useEffect } from 'react';
 
 import { Button, StyleSheet, Text, View } from 'react-native';
-import { showDeviceManager, sdmmodule, sendCommand } from 'react-native-awesome-module2';
+import { showDeviceManager, sdmmodule, sendCommand, OnSendCommand } from 'react-native-awesome-module2';
 
 // const deviceManagerEmitter = new NativeEventEmitter(sdmmodule);
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
+  useEffect(() => {
+    OnSendCommand((e: any) => {
+      console.log('OnSendCommand ', e);
+    });
+  }, []);
+  
   // useEffect(() => {
   //   const subscription = deviceManagerEmitter.addListener('sdmEventNewData', event => {
   //     console.log('new data from ' + event.address + ': ' + event.data);
