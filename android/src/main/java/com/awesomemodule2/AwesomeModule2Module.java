@@ -18,6 +18,7 @@ import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.restock.loggerlib.Logger;
 import com.restock.loggerlib.LoggerSinglton;
+import com.restock.serialdevicemanager.devicemanager.DexStatus;
 import com.restock.serialdevicemanager.devicemanager.SdmSingleton;
 import com.restock.serialdevicemanager.devicemanager.iSdmCallbacks;
 import com.restock.serialdevicemanager.devicemanager.iSdmHandler;
@@ -98,6 +99,12 @@ public class AwesomeModule2Module extends ReactContextBaseJavaModule implements 
     gLogger.putHex(data);
     sdmHandler.sendCommand(address, data);
   }
+  @ReactMethod
+  public void DexDownload(String address){
+    //todo add your logic
+    sdmHandler.dexDownload(address);
+  }
+
 
   public static byte[] readableArrayToByteBoolArray(ReadableArray readableArray) {
     byte[] bytesArr = new byte[readableArray.size()];
@@ -141,6 +148,11 @@ public class AwesomeModule2Module extends ReactContextBaseJavaModule implements 
     }
     gLogger.putt("SDMModule.onReceiveData: %s - %s\n", address, (String) strData);
     sendDataToRN(address, strData);
+  }
+
+  @Override
+  public void onDexDataResult(String s, DexStatus dexStatus, String s1, byte[] bytes) {
+
   }
 
   protected void initSDM() {

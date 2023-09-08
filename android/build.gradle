@@ -5,7 +5,7 @@ buildscript {
   }
 
   dependencies {
-    classpath "com.android.tools.build:gradle:7.2.1"
+    classpath "com.android.tools.build:gradle:7.2.2"
   }
 }
 
@@ -44,11 +44,11 @@ def supportsNamespace() {
 }
 
 android {
-  sourceSets {
-    main {
-      jniLibs.srcDirs = ['libs']
-    }
-  }
+//  sourceSets {
+//    main {
+//      jniLibs.srcDirs = ['libs']
+//    }
+//  }
   if (supportsNamespace()) {
     namespace "com.awesomemodule2"
 
@@ -88,10 +88,8 @@ repositories {
   google()
 }
 
-
 dependencies {
-  //noinspection GradlePath
-  implementation(name: 'serialdevicemanager-mgabuild-release3', ext: 'aar')
+  implementation(name: 'serialdevicemanager-dex-release', ext: 'aar')
   // For < 0.71, this will be from the local maven repo
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
