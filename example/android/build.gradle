@@ -19,3 +19,9 @@ buildscript {
         classpath("com.facebook.react:react-native-gradle-plugin")
     }
 }
+
+allprojects {
+  repositories {
+    flatDir { dirs "${project(':react-native-awesome-module2').projectDir}/libs" }
+  }
+}
