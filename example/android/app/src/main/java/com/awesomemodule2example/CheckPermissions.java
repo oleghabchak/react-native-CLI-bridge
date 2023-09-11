@@ -1,4 +1,4 @@
-package com.awesomemodule2example;
+package com.seedmobileapp;
 
 import android.Manifest;
 import android.app.Activity;

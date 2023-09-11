@@ -1,9 +1,9 @@
-package com.awesomemodule2example;
+package com.seedmobileapp;
 
 import android.content.Context;
 import android.os.Bundle;
 
-import com.awesomemodule2.Constants;
+import com.seedmobileapp.Constants;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
@@ -44,7 +44,7 @@ public class MainActivity extends ReactActivity implements CheckPermissions.iChe
    */
   @Override
   protected String getMainComponentName() {
-    return "AwesomeModule2Example";
+    return "seedmobileapp";
   }
 
   /**

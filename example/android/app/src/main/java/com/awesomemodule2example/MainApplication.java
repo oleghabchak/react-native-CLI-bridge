@@ -1,4 +1,4 @@
-package com.awesomemodule2example;
+package com.seedmobileapp;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

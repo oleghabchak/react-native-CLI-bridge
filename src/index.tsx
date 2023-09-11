@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
 const SioDexModule = NativeModules.SioDexModule;
-const SDMModule = NativeModules.AwesomeModule2;
+const SDMModule = NativeModules.SDMModule;
 
 export function showDeviceManager() {
   return SDMModule.showDeviceManager();

@@ -1,4 +1,4 @@
-package com.awesomemodule2example;
+package com.seedmobileapp;
 
 public class TPermission {
   String sMessage;

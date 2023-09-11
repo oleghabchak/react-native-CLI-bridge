@@ -1,4 +1,4 @@
-package com.awesomemodule2;
+package com.seedmobile;
 
 import android.os.Environment;
 

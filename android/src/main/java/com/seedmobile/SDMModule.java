@@ -1,4 +1,4 @@
-package com.awesomemodule2;
+package com.seedmobile;
 
 import android.os.Environment;
 import android.os.Looper;
@@ -26,9 +26,9 @@ import com.restock.serialdevicemanager.devicemanager.iSdmHandlerDiscoverBluetoot
 
 import java.nio.charset.Charset;
 
-@ReactModule(name = AwesomeModule2Module.NAME)
-public class AwesomeModule2Module extends ReactContextBaseJavaModule implements iSdmCallbacks {
-  public static final String NAME = "AwesomeModule2";
+@ReactModule(name = SDMModule.NAME)
+public class SDMModule extends ReactContextBaseJavaModule implements iSdmCallbacks {
+  public static final String NAME = "SDMModule";
   private static ReactApplicationContext reactContext;
   Logger gLogger;
 
@@ -62,7 +62,7 @@ public class AwesomeModule2Module extends ReactContextBaseJavaModule implements 
   };
 
 
-  public AwesomeModule2Module(ReactApplicationContext context) {
+  public SDMModule(ReactApplicationContext context) {
     super(reactContext);
     reactContext = context;
     // UtilsSDM.createFolder(Constants.FOLDER_PATH);

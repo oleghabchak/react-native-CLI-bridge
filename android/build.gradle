@@ -23,11 +23,11 @@ if (isNewArchitectureEnabled()) {
 }
 
 def getExtOrDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties["AwesomeModule2_" + name]
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties["seedmobile_" + name]
 }
 
 def getExtOrIntegerDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["AwesomeModule2_" + name]).toInteger()
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["seedmobile_" + name]).toInteger()
 }
 
 def supportsNamespace() {
@@ -50,7 +50,7 @@ android {
 //    }
 //  }
   if (supportsNamespace()) {
-    namespace "com.awesomemodule2"
+    namespace "com.seedmobile"
 
     sourceSets {
       main {
@@ -99,7 +99,7 @@ dependencies {
 if (isNewArchitectureEnabled()) {
   react {
     jsRootDir = file("../src/")
-    libraryName = "AwesomeModule2"
-    codegenJavaPackageName = "com.awesomemodule2"
+    libraryName = "seedmobile"
+    codegenJavaPackageName = "com.seedmobile"
   }
 }

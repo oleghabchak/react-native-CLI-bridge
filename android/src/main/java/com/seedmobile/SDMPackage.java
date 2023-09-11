@@ -1,4 +1,4 @@
-package com.awesomemodule2;
+package com.seedmobile;
 
 import androidx.annotation.NonNull;
 
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class AwesomeModule2Package implements ReactPackage {
+public class SDMPackage implements ReactPackage {
   @NonNull
   @Override
   public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
@@ -24,7 +24,7 @@ public class AwesomeModule2Package implements ReactPackage {
     @NonNull ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
 
-    modules.add(new AwesomeModule2Module(reactContext));
+    modules.add(new SDMModule(reactContext));
 
     return modules;
   }
