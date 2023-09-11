@@ -30,8 +30,15 @@ export function showDeviceManager() {
 export function sendCommand(addres: string, command: number[]) {
   return SDMModule.sendCommand(addres, command);
 }
+export function DexDownload(address: string) {
+  return SDMModule.DexDownload(address);
+}
+
 export function OnSendCommand(fn: (e: any) => void) {
   setEmitter('sendCommand', fn);
+}
+export function OnDexDownload(fn: (e: any) => void) {
+  setEmitter('dexDownload', fn);
 }
 
 export const sdmmodule = NativeModules.SDMModule;

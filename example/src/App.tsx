@@ -2,7 +2,14 @@ import * as React from 'react';
 import { useEffect } from 'react';
 
 import { Button, StyleSheet, Text, View } from 'react-native';
-import { showDeviceManager, sdmmodule, sendCommand, OnSendCommand } from 'react-native-awesome-module2';
+import {
+  showDeviceManager,
+  sdmmodule,
+  sendCommand,
+  OnSendCommand,
+  DexDownload,
+  OnDexDownload,
+} from 'react-native-awesome-module2';
 
 // const deviceManagerEmitter = new NativeEventEmitter(sdmmodule);
 
@@ -13,8 +20,12 @@ export default function App() {
     OnSendCommand((e: any) => {
       console.log('OnSendCommand ', e);
     });
+
+    OnDexDownload((e: any) => {
+      console.log('OnDexDownload ', e);
+    });
   }, []);
-  
+
   // useEffect(() => {
   //   const subscription = deviceManagerEmitter.addListener('sdmEventNewData', event => {
   //     console.log('new data from ' + event.address + ': ' + event.data);
@@ -38,20 +49,24 @@ export default function App() {
 
   const handlesend = () => {
     console.log('1 ===');
-    sendCommand('BlueSnap DB9 (7B8294)', [0x50, 0x0a, 0x0d])
+    sendCommand('BlueSnap DB9 (7B8294)', [0x50, 0x0a, 0x0d]);
     console.log('2 ===');
-  }
+  };
 
   return (
     <View style={styles.container}>
       <Text>Result: {result}</Text>
       <Button
-        title='Call showDeviceManager'
+        title="Call showDeviceManager"
         onPress={() => showDeviceManager()}
       />
+      <Button 
+        title="send Command" 
+        onPress={() => handlesend()} 
+        />
       <Button
-        title='send'
-        onPress={() => handlesend()}
+        title="Dex Download"
+        onPress={() => DexDownload('BlueSnap DB9 (7B8294)')}
       />
     </View>
   );
@@ -60,7 +75,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    height: 'auto',
+    justifyContent: 'space-around',
   },
   box: {
     width: 60,
