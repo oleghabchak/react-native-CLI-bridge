@@ -1,6 +1,6 @@
-#import "AwesomeModule2.h"
+#import "SDMModule.h"
 
-@implementation AwesomeModule2
+@implementation SDMModule
 RCT_EXPORT_MODULE()
 
 // Example method

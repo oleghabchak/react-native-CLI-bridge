@@ -1,4 +1,4 @@
-package com.seedmobileapp;
+package com.seedmobile;
 
 import android.Manifest;
 import android.app.Activity;
@@ -59,7 +59,7 @@ public class CheckPermissions {
 
     massPermiss = new TPermission[CNT_PERMISS];
     massPermiss[0] = new TPermission(1, Manifest.permission.ACCESS_FINE_LOCATION,
-      messageLocationPermission);
+        messageLocationPermission);
     massPermiss[1] = new TPermission(2, Manifest.permission.WRITE_EXTERNAL_STORAGE, messageWritePermission);
     massPermiss[2] = new TPermission(3, Manifest.permission.READ_PHONE_STATE, messagePhoneStatePermission);
     // massPermiss[3] = new TPermission(4,
@@ -90,7 +90,7 @@ public class CheckPermissions {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && context != null && permissions != null) {
       for (String permission : permissions) {
         if (PermissionChecker.checkSelfPermission(context,
-          permission) != PermissionChecker.PERMISSION_GRANTED) {
+            permission) != PermissionChecker.PERMISSION_GRANTED) {
           bRet = false;
           break;
         }
@@ -100,23 +100,23 @@ public class CheckPermissions {
   }
 
   public static boolean hasPermissions(Context context, String permissions) {
-    return hasPermissions(context, new String[]{permissions});
+    return hasPermissions(context, new String[] { permissions });
   }
 
   public static boolean hasLocationPermissions(Context context) {
-    return hasPermissions(context, new String[]{Manifest.permission.ACCESS_FINE_LOCATION});
+    return hasPermissions(context, new String[] { Manifest.permission.ACCESS_FINE_LOCATION });
   }
 
   public static boolean hasWriteExternalStorePermissions(Context context) {
-    return hasPermissions(context, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE});
+    return hasPermissions(context, new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE });
   }
 
   public static boolean hasReadPhoneStatePermissions(Context context) {
-    return hasPermissions(context, new String[]{Manifest.permission.READ_PHONE_STATE});
+    return hasPermissions(context, new String[] { Manifest.permission.READ_PHONE_STATE });
   }
 
   public static boolean hasCameraPermissions(Context context) {
-    return hasPermissions(context, new String[]{Manifest.permission.CAMERA});
+    return hasPermissions(context, new String[] { Manifest.permission.CAMERA });
   }
 
   private String[] needPermissions(Context context, String... permissions) {
@@ -126,7 +126,7 @@ public class CheckPermissions {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && context != null && permissions != null) {
       for (String permission : permissions) {
         if (PermissionChecker.checkSelfPermission(context,
-          permission) != PermissionChecker.PERMISSION_GRANTED) {
+            permission) != PermissionChecker.PERMISSION_GRANTED) {
           listPermissions.add(permission);
         }
       }
@@ -147,7 +147,7 @@ public class CheckPermissions {
 
   private void openApplicationSettings() {
     Intent appSettingsIntent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-      Uri.parse("package:" + mContext.getPackageName()));
+        Uri.parse("package:" + mContext.getPackageName()));
     activity.startActivityForResult(appSettingsIntent, PERMISSION_REQUEST_CODE);
   }
 
@@ -155,31 +155,31 @@ public class CheckPermissions {
     if (ActivityCompat.shouldShowRequestPermissionRationale(activity, permiss.mPermission)) {
       permiss.iCntRequests++;
       Snackbar sb = Snackbar.make(snack_wiev, permiss.sMessage, Snackbar.LENGTH_INDEFINITE).setAction("OK",
-        new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-            requestPerms(new String[]{permiss.mPermission}, permiss.iREQUEST_CODE);
-          }
-        });
+          new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              requestPerms(new String[] { permiss.mPermission }, permiss.iREQUEST_CODE);
+            }
+          });
       View snackbarView = sb.getView();
       TextView textView = snackbarView.findViewById(com.google.android.material.R.id.snackbar_text);
       textView.setMaxLines(5); // show multiple line
       sb.show();
     } else {
-      requestPerms(new String[]{permiss.mPermission}, permiss.iREQUEST_CODE);
+      requestPerms(new String[] { permiss.mPermission }, permiss.iREQUEST_CODE);
     }
   }
 
   private void showNoPermissionSnackbar(String s) {
     Snackbar sb = Snackbar.make(snack_wiev, s, Snackbar.LENGTH_INDEFINITE).setAction("SETTINGS",
-      new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-          openApplicationSettings();
-          Toast.makeText(activity.getApplicationContext(),
-            "Please open Permissions and grant permissions", Toast.LENGTH_LONG).show();
-        }
-      });
+        new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+            openApplicationSettings();
+            Toast.makeText(activity.getApplicationContext(),
+                "Please open Permissions and grant permissions", Toast.LENGTH_LONG).show();
+          }
+        });
     View snackbarView = sb.getView();
     TextView textView = (TextView) snackbarView.findViewById(com.google.android.material.R.id.snackbar_text);
     textView.setMaxLines(20); // show multiple line
@@ -213,7 +213,7 @@ public class CheckPermissions {
     if (requestCode == REQUEST_ALL_PERMISSION) {
       for (int i = 0; i < CNT_PERMISS; i++) {
         permiss = massPermiss[i];
-        if (!hasPermissions(mContext, new String[]{permiss.mPermission})) {
+        if (!hasPermissions(mContext, new String[] { permiss.mPermission })) {
           requestWithRationale(permiss);
           return;
         }
@@ -225,7 +225,7 @@ public class CheckPermissions {
       if (requestCode == permiss.iREQUEST_CODE) {
         for (int j = i + 1; j < CNT_PERMISS; j++) {
           permiss = massPermiss[j];
-          if (!hasPermissions(mContext, new String[]{permiss.mPermission}) && permiss.iCntRequests == 0) {
+          if (!hasPermissions(mContext, new String[] { permiss.mPermission }) && permiss.iCntRequests == 0) {
             requestWithRationale(permiss);
             return;
           }
@@ -245,7 +245,7 @@ public class CheckPermissions {
     int n = 0;
     for (int i = 0; i < CNT_PERMISS; i++) {
       permiss = massPermiss[i];
-      if (!hasPermissions(mContext, new String[]{permiss.mPermission})) {
+      if (!hasPermissions(mContext, new String[] { permiss.mPermission })) {
         sRestPerm += String.format("\n%d) %s", ++n, permiss.sMessage);
       }
     }

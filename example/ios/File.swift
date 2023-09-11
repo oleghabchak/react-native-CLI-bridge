@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  AwesomeModule2Example
+//  seedmobile
 //
 
 import Foundation

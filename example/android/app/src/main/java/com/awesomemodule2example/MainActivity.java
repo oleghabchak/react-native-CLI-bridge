@@ -1,9 +1,9 @@
-package com.seedmobileapp;
+package com.seedmobile;
 
 import android.content.Context;
 import android.os.Bundle;
 
-import com.seedmobileapp.Constants;
+import com.seedmobile.Constants;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
@@ -33,31 +33,35 @@ public class MainActivity extends ReactActivity implements CheckPermissions.iChe
   }
 
   void initapp() {
-    if (bInit) return;
+    if (bInit)
+      return;
     bInit = true;
     Constants.createFolder(Constants.FOLDER_PATH);
   }
 
   /**
-   * Returns the name of the main component registered from JavaScript. This is used to schedule
+   * Returns the name of the main component registered from JavaScript. This is
+   * used to schedule
    * rendering of the component.
    */
   @Override
   protected String getMainComponentName() {
-    return "seedmobileapp";
+    return "seedmobile";
   }
 
   /**
-   * Returns the instance of the {@link ReactActivityDelegate}. Here we use a util class {@link
-   * DefaultReactActivityDelegate} which allows you to easily enable Fabric and Concurrent React
+   * Returns the instance of the {@link ReactActivityDelegate}. Here we use a util
+   * class {@link
+   * DefaultReactActivityDelegate} which allows you to easily enable Fabric and
+   * Concurrent React
    * (aka React 18) with two boolean flags.
    */
   @Override
   protected ReactActivityDelegate createReactActivityDelegate() {
     return new DefaultReactActivityDelegate(
-      this,
-      getMainComponentName(),
-      // If you opted-in for the New Architecture, we enable the Fabric Renderer.
-      DefaultNewArchitectureEntryPoint.getFabricEnabled());
+        this,
+        getMainComponentName(),
+        // If you opted-in for the New Architecture, we enable the Fabric Renderer.
+        DefaultNewArchitectureEntryPoint.getFabricEnabled());
   }
 }

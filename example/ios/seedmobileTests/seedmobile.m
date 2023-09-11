@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface AwesomeModule2ExampleTests : XCTestCase
+@interface seedmobileTests : XCTestCase
 
 @end
 
-@implementation AwesomeModule2ExampleTests
+@implementation seedmobileTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {

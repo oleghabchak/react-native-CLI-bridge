@@ -53,7 +53,7 @@ Remember to add tests for your change if possible. Run the unit tests by:
 yarn test
 ```
 
-To edit the Objective-C or Swift files, open `example/ios/AwesomeModule2Example.xcworkspace` in XCode and find the source files at `Pods > Development Pods > react-native-awesome-module2`.
+To edit the Objective-C or Swift files, open `example/ios/seedmobile.xcworkspace` in XCode and find the source files at `Pods > Development Pods > react-native-awesome-module2`.
 
 To edit the Java or Kotlin files, open `example/android` in Android studio and find the source files at `react-native-awesome-module2` under `Android`.
 

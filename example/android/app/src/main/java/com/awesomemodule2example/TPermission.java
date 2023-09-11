@@ -1,4 +1,4 @@
-package com.seedmobileapp;
+package com.seedmobile;
 
 public class TPermission {
   String sMessage;

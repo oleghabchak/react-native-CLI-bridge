@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* AwesomeModule2ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AwesomeModule2ExampleTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-AwesomeModule2Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-AwesomeModule2Example.a */; };
+		00E356F31AD99517003FC87E /* seedmobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* seedmobileTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-AwesomeModule2Example-AwesomeModule2ExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-AwesomeModule2Example-AwesomeModule2ExampleTests.a */; };
+		32B23907DD7F87BACAFCDA90 /* libPods-seedmobile-seedmobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F0248332406711999B9693 /* libPods-seedmobile-seedmobileTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		95BC2AC42AA7542500C51C1B /* SDM.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BC2AC32AA7542500C51C1B /* SDM.xcframework */; };
 		95BC2AC52AA7543300C51C1B /* SDM.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BC2AC32AA7542500C51C1B /* SDM.xcframework */; };
@@ -23,6 +22,7 @@
 		95D1F36D2AA8C72700A7E222 /* QuantumSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3672AA8C58F00A7E222 /* QuantumSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95D1F36E2AA8C72700A7E222 /* NewRelic.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F3682AA8C59200A7E222 /* NewRelic.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95D1F36F2AA8C72700A7E222 /* sioDEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1F36A2AA8C59200A7E222 /* sioDEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EAA266355676A8436EBB071C /* libPods-seedmobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B531D7582E0B07CDF31CA51F /* libPods-seedmobile.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = AwesomeModule2Example;
+			remoteInfo = seedmobile;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,27 +53,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* AwesomeModule2ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeModule2ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* seedmobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = seedmobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* AwesomeModule2ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeModule2ExampleTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* AwesomeModule2Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeModule2Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AwesomeModule2Example/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = AwesomeModule2Example/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AwesomeModule2Example/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AwesomeModule2Example/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AwesomeModule2Example/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-AwesomeModule2Example-AwesomeModule2ExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeModule2Example-AwesomeModule2ExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-AwesomeModule2Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeModule2Example.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeModule2Example/Pods-AwesomeModule2Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-AwesomeModule2Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeModule2Example.release.xcconfig"; path = "Target Support Files/Pods-AwesomeModule2Example/Pods-AwesomeModule2Example.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-AwesomeModule2Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeModule2Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AwesomeModule2Example/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* seedmobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = seedmobileTests.m; sourceTree = "<group>"; };
+		0503C2CB40AC507B1A3974FC /* Pods-seedmobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seedmobile.debug.xcconfig"; path = "Target Support Files/Pods-seedmobile/Pods-seedmobile.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* seedmobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seedmobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = seedmobile/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = seedmobile/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = seedmobile/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = seedmobile/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = seedmobile/main.m; sourceTree = "<group>"; };
+		318DDC3D974248AFFFA4CA6F /* Pods-seedmobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seedmobile.release.xcconfig"; path = "Target Support Files/Pods-seedmobile/Pods-seedmobile.release.xcconfig"; sourceTree = "<group>"; };
+		78F0248332406711999B9693 /* libPods-seedmobile-seedmobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-seedmobile-seedmobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = seedmobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95BC2AC32AA7542500C51C1B /* SDM.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SDM.xcframework; sourceTree = "<group>"; };
 		95D1F3672AA8C58F00A7E222 /* QuantumSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = QuantumSDK.xcframework; sourceTree = "<group>"; };
 		95D1F3682AA8C59200A7E222 /* NewRelic.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NewRelic.xcframework; sourceTree = "<group>"; };
 		95D1F36A2AA8C59200A7E222 /* sioDEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = sioDEX.xcframework; sourceTree = "<group>"; };
+		B531D7582E0B07CDF31CA51F /* libPods-seedmobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-seedmobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB39A7BF0147B516F4CDD741 /* Pods-seedmobile-seedmobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seedmobile-seedmobileTests.release.xcconfig"; path = "Target Support Files/Pods-seedmobile-seedmobileTests/Pods-seedmobile-seedmobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F0F2C329627CE3E2BE1315A8 /* Pods-seedmobile-seedmobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seedmobile-seedmobileTests.debug.xcconfig"; path = "Target Support Files/Pods-seedmobile-seedmobileTests/Pods-seedmobile-seedmobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95BC2AC42AA7542500C51C1B /* SDM.xcframework in Frameworks */,
-				7699B88040F8A987B510C191 /* libPods-AwesomeModule2Example-AwesomeModule2ExampleTests.a in Frameworks */,
+				32B23907DD7F87BACAFCDA90 /* libPods-seedmobile-seedmobileTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,22 +92,22 @@
 			files = (
 				95BC2AC52AA7543300C51C1B /* SDM.xcframework in Frameworks */,
 				95D1F36C2AA8C59200A7E222 /* sioDEX.xcframework in Frameworks */,
-				0C80B921A6F3F58F76C31292 /* libPods-AwesomeModule2Example.a in Frameworks */,
 				95D1F36B2AA8C59200A7E222 /* QuantumSDK.xcframework in Frameworks */,
 				95D1F3692AA8C59200A7E222 /* NewRelic.xcframework in Frameworks */,
+				EAA266355676A8436EBB071C /* libPods-seedmobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* AwesomeModule2ExampleTests */ = {
+		00E356EF1AD99517003FC87E /* seedmobileTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* AwesomeModule2ExampleTests.m */,
+				00E356F21AD99517003FC87E /* seedmobileTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = AwesomeModule2ExampleTests;
+			path = seedmobileTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -118,7 +118,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* AwesomeModule2Example */ = {
+		13B07FAE1A68108700A75B9A /* seedmobile */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -128,7 +128,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = AwesomeModule2Example;
+			name = seedmobile;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -139,8 +139,8 @@
 				95D1F36A2AA8C59200A7E222 /* sioDEX.xcframework */,
 				95BC2AC32AA7542500C51C1B /* SDM.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-AwesomeModule2Example.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-AwesomeModule2Example-AwesomeModule2ExampleTests.a */,
+				B531D7582E0B07CDF31CA51F /* libPods-seedmobile.a */,
+				78F0248332406711999B9693 /* libPods-seedmobile-seedmobileTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,9 +155,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* AwesomeModule2Example */,
+				13B07FAE1A68108700A75B9A /* seedmobile */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* AwesomeModule2ExampleTests */,
+				00E356EF1AD99517003FC87E /* seedmobileTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -170,8 +170,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* AwesomeModule2Example.app */,
-				00E356EE1AD99517003FC87E /* AwesomeModule2ExampleTests.xctest */,
+				13B07F961A680F5B00A75B9A /* seedmobile.app */,
+				00E356EE1AD99517003FC87E /* seedmobileTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,10 +179,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-AwesomeModule2Example.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-AwesomeModule2Example.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.release.xcconfig */,
+				0503C2CB40AC507B1A3974FC /* Pods-seedmobile.debug.xcconfig */,
+				318DDC3D974248AFFFA4CA6F /* Pods-seedmobile.release.xcconfig */,
+				F0F2C329627CE3E2BE1315A8 /* Pods-seedmobile-seedmobileTests.debug.xcconfig */,
+				BB39A7BF0147B516F4CDD741 /* Pods-seedmobile-seedmobileTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -190,48 +190,48 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* AwesomeModule2ExampleTests */ = {
+		00E356ED1AD99517003FC87E /* seedmobileTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AwesomeModule2ExampleTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "seedmobileTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				45194F5A0B87A73427934CBA /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				531E1CB56D87B38D911ED616 /* [CP] Embed Pods Frameworks */,
+				C3D8FC423F4840A707D7605A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = AwesomeModule2ExampleTests;
-			productName = AwesomeModule2ExampleTests;
-			productReference = 00E356EE1AD99517003FC87E /* AwesomeModule2ExampleTests.xctest */;
+			name = seedmobileTests;
+			productName = seedmobileTests;
+			productReference = 00E356EE1AD99517003FC87E /* seedmobileTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* AwesomeModule2Example */ = {
+		13B07F861A680F5B00A75B9A /* seedmobile */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AwesomeModule2Example" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "seedmobile" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				8A180206CFA5D1071199A0F1 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 				95BC2AC72AA7543300C51C1B /* Embed Frameworks */,
+				008071447E9821F115BAC994 /* [CP] Embed Pods Frameworks */,
+				25236C2AA86BF47C81216195 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AwesomeModule2Example;
-			productName = AwesomeModule2Example;
-			productReference = 13B07F961A680F5B00A75B9A /* AwesomeModule2Example.app */;
+			name = seedmobile;
+			productName = seedmobile;
+			productReference = 13B07F961A680F5B00A75B9A /* seedmobile.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -251,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AwesomeModule2Example" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "seedmobile" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -264,8 +264,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* AwesomeModule2Example */,
-				00E356ED1AD99517003FC87E /* AwesomeModule2ExampleTests */,
+				13B07F861A680F5B00A75B9A /* seedmobile */,
+				00E356ED1AD99517003FC87E /* seedmobileTests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +290,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		008071447E9821F115BAC994 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-seedmobile/Pods-seedmobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-seedmobile/Pods-seedmobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-seedmobile/Pods-seedmobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -306,24 +323,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		25236C2AA86BF47C81216195 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example/Pods-AwesomeModule2Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-seedmobile/Pods-seedmobile-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example/Pods-AwesomeModule2Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-seedmobile/Pods-seedmobile-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example/Pods-AwesomeModule2Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-seedmobile/Pods-seedmobile-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		45194F5A0B87A73427934CBA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,16 +355,33 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-seedmobile-seedmobileTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		531E1CB56D87B38D911ED616 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-seedmobile-seedmobileTests/Pods-seedmobile-seedmobileTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-seedmobile-seedmobileTests/Pods-seedmobile-seedmobileTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-seedmobile-seedmobileTests/Pods-seedmobile-seedmobileTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A180206CFA5D1071199A0F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
@@ -360,62 +394,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AwesomeModule2Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-seedmobile-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		C3D8FC423F4840A707D7605A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example/Pods-AwesomeModule2Example-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-seedmobile-seedmobileTests/Pods-seedmobile-seedmobileTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example/Pods-AwesomeModule2Example-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-seedmobile-seedmobileTests/Pods-seedmobile-seedmobileTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example/Pods-AwesomeModule2Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests/Pods-AwesomeModule2Example-AwesomeModule2ExampleTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-seedmobile-seedmobileTests/Pods-seedmobile-seedmobileTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -444,7 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* AwesomeModule2ExampleTests.m in Sources */,
+				00E356F31AD99517003FC87E /* seedmobileTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +462,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* AwesomeModule2Example */;
+			target = 13B07F861A680F5B00A75B9A /* seedmobile */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -470,14 +470,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.debug.xcconfig */;
+			baseConfigurationReference = F0F2C329627CE3E2BE1315A8 /* Pods-seedmobile-seedmobileTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AwesomeModule2ExampleTests/Info.plist;
+				INFOPLIST_FILE = seedmobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,17 +491,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeModule2Example.app/AwesomeModule2Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/seedmobile.app/seedmobile";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeModule2Example-AwesomeModule2ExampleTests.release.xcconfig */;
+			baseConfigurationReference = BB39A7BF0147B516F4CDD741 /* Pods-seedmobile-seedmobileTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = AwesomeModule2ExampleTests/Info.plist;
+				INFOPLIST_FILE = seedmobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,19 +515,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeModule2Example.app/AwesomeModule2Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/seedmobile.app/seedmobile";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-AwesomeModule2Example.debug.xcconfig */;
+			baseConfigurationReference = 0503C2CB40AC507B1A3974FC /* Pods-seedmobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = MU68D5A5D8;
+				DEVELOPMENT_TEAM = XW89B9YUVN;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64 srmv7k";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -542,7 +542,7 @@
 					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built\"",
 					"\"$(SRCROOT)/Frameworks\"",
 				);
-				INFOPLIST_FILE = AwesomeModule2Example/Info.plist;
+				INFOPLIST_FILE = seedmobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,8 +553,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = AwesomeModule2Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seedmobile;
+				PRODUCT_NAME = seedmobile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -563,13 +563,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-AwesomeModule2Example.release.xcconfig */;
+			baseConfigurationReference = 318DDC3D974248AFFFA4CA6F /* Pods-seedmobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = MU68D5A5D8;
+				DEVELOPMENT_TEAM = XW89B9YUVN;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64 srmv7k";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -577,7 +577,7 @@
 					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built\"",
 					"\"$(SRCROOT)/Frameworks\"",
 				);
-				INFOPLIST_FILE = AwesomeModule2Example/Info.plist;
+				INFOPLIST_FILE = seedmobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,8 +588,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = AwesomeModule2Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seedmobile;
+				PRODUCT_NAME = seedmobile;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -737,7 +737,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AwesomeModule2ExampleTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "seedmobileTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -746,7 +746,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AwesomeModule2Example" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "seedmobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -755,7 +755,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AwesomeModule2Example" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "seedmobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
