@@ -1,71 +1,62 @@
 import * as React from 'react';
 import { useEffect } from 'react';
 
-import { Button, StyleSheet, Text, View } from 'react-native';
-import {
-  showDeviceManager,
-  sdmmodule,
-  sendCommand,
-  OnSendCommand,
-  DexDownload,
-  OnDexDownload,
-} from 'react-native-awesome-module2';
+import { Button, NativeEventEmitter, StyleSheet, View } from 'react-native';
+import { DexDownload, sdmmodule, showDeviceManager, sioModule } from 'react-native-awesome-module2';
 
-// const deviceManagerEmitter = new NativeEventEmitter(sdmmodule);
+const deviceManagerEmitterSDM = new NativeEventEmitter(sdmmodule);
+const deviceManagerEmitteSIO = new NativeEventEmitter(sioModule);
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  useEffect(() => {
-    OnSendCommand((e: any) => {
-      console.log('OnSendCommand ', e);
-    });
-
-    OnDexDownload((e: any) => {
-      console.log('OnDexDownload ', e);
-    });
-  }, []);
-
   // useEffect(() => {
-  //   const subscription = deviceManagerEmitter.addListener('sdmEventNewData', event => {
-  //     console.log('new data from ' + event.address + ': ' + event.data);
+  //   const subscription = deviceManagerEmitterSDM.addListener('sdmEventNewDexData', event => {
+  //     console.log('sdmEventNewDexData' + JSON.stringify(event));
   //   });
-
+  //
   //   return () => {
   //     subscription.remove();
   //   }
   // }, []);
 
-  // useEffect(() => {
-  //   console.log('add listener for sdmEventDeviceState');
-  //   const subscription = deviceManagerEmitter.addListener('sdmEventDeviceState', event => {
-  //     console.log('New device state ' + event.address + ': ' + event.state);
-  //   });
+  useEffect(() => {
+    const subscription = deviceManagerEmitteSIO.addListener('sioDexEventNewData', event => {
+      console.log('sioDexEventNewData' + JSON.stringify(event));
+    });
 
-  //   return () => {
-  //     subscription.remove();
-  //   }
-  // });
+    return () => {
+      subscription.remove();
+    };
+  }, []);
 
-  const handlesend = () => {
-    console.log('1 ===');
-    sendCommand('BlueSnap DB9 (7B8294)', [0x50, 0x0a, 0x0d]);
-    console.log('2 ===');
-  };
+  useEffect(() => {
+    const subscription = deviceManagerEmitteSIO.addListener('sioDexEventTrace', event => {
+      console.log('sioDexEventTrace' + JSON.stringify(event));
+    });
+
+    return () => {
+      subscription.remove();
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log('add listener for sdmEventDeviceState');
+    const subscription = deviceManagerEmitterSDM.addListener('sdmEventDeviceState', event => {
+      console.log('New device state ' + event.address + ': ' + event.state);
+    });
+
+    return () => {
+      subscription.remove();
+    }
+  });
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
       <Button
-        title="Call showDeviceManager"
+        title='Call showDeviceManager'
         onPress={() => showDeviceManager()}
       />
-      <Button 
-        title="send Command" 
-        onPress={() => handlesend()} 
-        />
       <Button
-        title="Dex Download"
+        title='Dex Download'
         onPress={() => DexDownload('BlueSnap DB9 (7B8294)')}
       />
     </View>

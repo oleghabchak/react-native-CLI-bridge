@@ -24,6 +24,8 @@ import com.restock.serialdevicemanager.devicemanager.iSdmCallbacks;
 import com.restock.serialdevicemanager.devicemanager.iSdmHandler;
 import com.restock.serialdevicemanager.devicemanager.iSdmHandlerDiscoverBluetooth;
 
+import java.nio.charset.Charset;
+
 @ReactModule(name = AwesomeModule2Module.NAME)
 public class AwesomeModule2Module extends ReactContextBaseJavaModule implements iSdmCallbacks {
   public static final String NAME = "AwesomeModule2";
@@ -101,10 +103,11 @@ public class AwesomeModule2Module extends ReactContextBaseJavaModule implements 
   }
   @ReactMethod
   public void DexDownload(String address){
-    //todo add your logic
+   Log.d("CalendarModule", "Create event called with name: " + address
+                   + " and location: " + address);
+           gLogger.putt("SDMModule.DexDownload from %s\n", address);
     sdmHandler.dexDownload(address);
   }
-
 
   public static byte[] readableArrayToByteBoolArray(ReadableArray readableArray) {
     byte[] bytesArr = new byte[readableArray.size()];
@@ -151,9 +154,46 @@ public class AwesomeModule2Module extends ReactContextBaseJavaModule implements 
   }
 
   @Override
-  public void onDexDataResult(String s, DexStatus dexStatus, String s1, byte[] bytes) {
-
-  }
+      public void onDexDataResult(String address, DexStatus status, String statusMsg, byte[] resultDex)
+      {
+          String sLog = "";
+          gLogger.putt("SDMModule.onDexDataResult\n");
+          switch (status)
+          {
+              case DOWNLOAD_STARTED: {
+                  sLog = String.format("DEX [%s] Status=%s: %s\n", address, status, statusMsg);
+                  sendDexDataToRN(address, status, statusMsg, "");
+                  break;
+              }
+              case DOWNLOADING: {
+                  sLog = String.format("DEX [%s] Status=%s: %s\n", address, status, statusMsg);
+                  break;
+              }
+              case SENT_DATA_CMD: {
+                  sLog = String.format("DEX > %s\n", statusMsg);
+                  break;
+              }
+              case RECEIVED_DATA_RESPONSE: {
+                  sLog = String.format("DEX < %s\n", statusMsg);
+                  break;
+              }
+              case DOWNLOADED:
+              {
+                  String dexString = new String(resultDex, Charset.forName("US-ASCII"));
+  //                sLog = String.format("DEX Downloaded:  %s\n", dexString);
+                  sendDexDataToRN(address, status, statusMsg, dexString);
+              }
+              break;
+              case ERROR:
+              {
+                  sLog = String.format("DEX Error %s\n", statusMsg);
+                  sendDexDataToRN(address, status, statusMsg, "");
+              }
+              break;
+          }
+          gLogger.putt(sLog);
+  //        sendDataToRN(address, sLog);
+      }
 
   protected void initSDM() {
     int iRes = sdmHandler.init(reactContext.getApplicationContext(), this, m_strFolderPath);
@@ -183,6 +223,15 @@ public class AwesomeModule2Module extends ReactContextBaseJavaModule implements 
     map.putString("data", data);
     sendEvent(reactContext, "sdmEventNewData", map);
   }
+
+  private void sendDexDataToRN(String address, DexStatus status, String statusMsg, String resultDex){
+          WritableMap map = Arguments.createMap();
+          map.putString("address", address);
+          map.putInt("DexStatus", status.ordinal());
+          map.putString("statusMessage", statusMsg);
+          map.putString("resultDex", resultDex);
+          sendEvent(reactContext, "sdmEventNewDexData", map);
+      }
 
   private void sendDeviceStateToRN(String address, int state) {
     WritableMap map = Arguments.createMap();
