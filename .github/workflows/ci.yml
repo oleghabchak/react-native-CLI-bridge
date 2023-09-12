@@ -146,6 +146,9 @@ jobs:
         env:
           NO_FLIPPER: 1
 
+      - name: Install React Native CLI
+        run: npm install -g react-native-cli
+
       - name: Build example for iOS
         run: |
           react-native run-ios
