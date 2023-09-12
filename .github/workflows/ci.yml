@@ -148,4 +148,4 @@ jobs:
 
       - name: Build example for iOS
         run: |
-          yarn ios
+          react-native run-ios
