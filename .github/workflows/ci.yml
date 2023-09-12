@@ -112,13 +112,13 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      # - name: Cache turborepo for iOS
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: ${{ env.TURBO_CACHE_DIR }}
-      #     key: ${{ runner.os }}-turborepo-ios-${{ hashFiles('**/yarn.lock') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-turborepo-ios-
+      - name: Cache turborepo for iOS
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.TURBO_CACHE_DIR }}
+          key: ${{ runner.os }}-turborepo-ios-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-turborepo-ios-
 
       # - name: Check turborepo cache for iOS
       #   run: |
