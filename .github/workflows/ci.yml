@@ -152,9 +152,6 @@ jobs:
       - name: Add Node.js and Yarn to PATH
         run: echo 'export PATH=$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH' >> $GITHUB_ENV
 
-      - name: Add Node.js and Yarn to PATH
-        run: echo 'export PATH=$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH' >> $GITHUB_ENV
-
       - name: Build example for iOS
         run: |
-          react-native run-ios
+          cd example && react-native run-ios
