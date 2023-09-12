@@ -8,7 +8,8 @@ export function showDeviceManager() {
 }
 
 export function DexDownload(address: string) {
-  return SioDexModule.startDownloading(address, 0);
+  return SDMModule.DexDownload(address);
+  // return SioDexModule.startDownloading(address, 0);
 }
 
 export const sdmmodule = SDMModule;

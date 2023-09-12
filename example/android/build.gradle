@@ -22,6 +22,6 @@ buildscript {
 
 allprojects {
   repositories {
-    flatDir { dirs "${project(':react-native-awesome-module2').projectDir}/libs" }
+    flatDir { dirs "${project(':rnbridge').projectDir}/libs" }
   }
 }

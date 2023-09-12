@@ -1,4 +1,4 @@
-package com.seedmobile;
+package com.rnbridge;
 
 import androidx.annotation.NonNull;
 

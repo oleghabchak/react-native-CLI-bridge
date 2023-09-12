@@ -73,9 +73,9 @@ android {
 
   compileSdkVersion rootProject.ext.compileSdkVersion
 
-  namespace "com.awesomemodule2example"
+  namespace "com.seedmobile"
   defaultConfig {
-    applicationId "com.awesomemodule2example"
+    applicationId "com.seedmobile"
     minSdkVersion rootProject.ext.minSdkVersion
     targetSdkVersion rootProject.ext.targetSdkVersion
     versionCode 1

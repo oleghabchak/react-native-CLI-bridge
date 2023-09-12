@@ -3,7 +3,7 @@ package com.seedmobile;
 import android.content.Context;
 import android.os.Bundle;
 
-import com.seedmobile.Constants;
+import com.rnbridge.Constants;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
