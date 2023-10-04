@@ -31,7 +31,7 @@ For iOS, run the following command:
 ```
 cd ios && pod install
 
-react-native run-ios
+cd .. && npx react-native run-ios
 ```
 
 ### Android
